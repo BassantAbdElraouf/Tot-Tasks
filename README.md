@@ -13,3 +13,5 @@ The actual note linked to a purchase order.
 
 3. purchase.note.tag
 Optional tags for classification and filtering.
+4. purchase.note.attachment
+Attachments related to the notes (files, documents, etc.)
