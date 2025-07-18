@@ -15,3 +15,23 @@ The actual note linked to a purchase order.
 Optional tags for classification and filtering.
 4. purchase.note.attachment
 Attachments related to the notes (files, documents, etc.)
+
+🧩 Module: purchase_budget_control
+Extends: purchase + account
+
+🎯 Purpose:
+Link purchasing operations to budgets and control expenses efficiently
+
+📦 Models:
+1. purchase.budget.plan
+Represents the monthly or yearly budget plan associated with each department.
+
+2. purchase.budget.line
+Defines budget lines for each type of purchase (equipment, office supplies, maintenance...).
+
+3. purchase.budget.consumption
+Tracks actual budget consumption based on confirmed purchase orders.
+
+4. purchase.budget.alert
+Triggers alerts when a specific budget threshold is exceeded.
+
