@@ -1,5 +1,4 @@
 🧩 Module: purchase_note
-Extends: purchase
 
 🎯 Purpose:
 To enable structured notes on purchase orders with classification and attachments.
