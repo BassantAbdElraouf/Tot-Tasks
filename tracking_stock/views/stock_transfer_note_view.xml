@@ -1,0 +1,43 @@
+<odoo>
+    <record id="view_form_stock_transfer_note" model="ir.ui.view">
+        <field name="name">stock.transfer.note.form</field>
+        <field name="model">stock.transfer.note</field>
+        <field name="arch" type="xml">
+            <form string="Transfer Note">
+                <sheet>
+                    <group>
+                        <field name="picking_id"/>
+                        <field name="note"/>
+                        <field name="created_by" readonly="1"/>
+                        <field name="created_on" readonly="1"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_list_stock_transfer_note" model="ir.ui.view">
+        <field name="name">stock.transfer.note.list</field>
+        <field name="model">stock.transfer.note</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="picking_id"/>
+                <field name="note"/>
+                <field name="created_by"/>
+                <field name="created_on"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="action_stock_transfer_note" model="ir.actions.act_window">
+        <field name="name">Transfer Notes</field>
+        <field name="res_model">stock.transfer.note</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem id="menu_stock_transfer_note"
+              name="Transfer Notes"
+              parent="menu_stock_item_damage_root"
+              action="action_stock_transfer_note"
+              sequence="139"/>
+</odoo>

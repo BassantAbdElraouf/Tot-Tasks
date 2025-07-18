@@ -1,0 +1,48 @@
+<odoo>
+     <!-- Action -->
+    <record id="action_purchase_note_category_window" model="ir.actions.act_window">
+        <field name="name">Note Categories</field>
+        <field name="res_model">purchase.note.category</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <!-- Menu -->
+    <menuitem id="menu_purchase_note_category"
+              name="Note Categories"
+              parent="menu_purchase_note_root"
+              action="action_purchase_note_category_window"
+              sequence="20"/>
+
+
+    <!-- Tree View -->
+    <record id="view_purchase_note_category_tree" model="ir.ui.view">
+        <field name="name">purchase.note.category.list</field>
+        <field name="model">purchase.note.category</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="color"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Form View -->
+    <record id="view_purchase_note_category_form" model="ir.ui.view">
+        <field name="name">purchase.note.category.form</field>
+        <field name="model">purchase.note.category</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="color"/>
+                    </group>
+                    <group>
+                        <field name="description"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+</odoo>

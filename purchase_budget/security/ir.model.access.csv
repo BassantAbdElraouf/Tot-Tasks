@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_purchase_budget_plan,access.purchase_budget_plan,model_purchase_budget_plan,,1,1,1,1
+access_purchase_budget_line,access.purchase_budget_line,model_purchase_budget_line,,1,1,1,1
+access_purchase_budget_consumption,access.purchase_budget_consumption,model_purchase_budget_consumption,,1,1,1,1
+access_purchase_budget_alert,access.purchase_budget_alert,model_purchase_budget_alert,,1,1,1,1

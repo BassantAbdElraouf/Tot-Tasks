@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_stock_item_damage,access.stock_item_damage,model_stock_item_damage,,1,1,1,1
+access_stock_location_restriction,access.stock_location_restriction,model_stock_location_restriction,,1,1,1,1
+access_stock_picking_temperature_log,access.stock_picking_temperature_log,model_stock_picking_temperature_log,,1,1,1,1
+access_stock_transfer_note,access.stock_transfer_note,model_stock_transfer_note,,1,1,1,1
+
+

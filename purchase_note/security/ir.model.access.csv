@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_purchase_note,access.purchase_note,model_purchase_note,,1,1,1,1
+access_purchase_note_category,access.purchase_note_category,model_purchase_note_category,,1,1,1,1
+access_purchase_note_tag,access.purchase_note_tag,model_purchase_note_tag,,1,1,1,1
+access_purchase_note_attachment,access.purchase_note_attachment,model_purchase_note_attachment,,1,1,1,1
+

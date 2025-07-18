@@ -1,0 +1,48 @@
+<odoo>
+    <record id="view_form_stock_item_damage" model="ir.ui.view">
+        <field name="name">stock.item.damage.form</field>
+        <field name="model">stock.item.damage</field>
+        <field name="arch" type="xml">
+            <form string="Damaged Item">
+                <sheet>
+                    <group>
+                        <field name="product_id"/>
+                        <field name="location_id"/>
+                        <field name="damage_type"/>
+                        <field name="quantity"/>
+                        <field name="damage_reason"/>
+                        <field name="date_damaged"/>
+                        <field name="reported_by" readonly="1"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_list_stock_item_damage" model="ir.ui.view">
+        <field name="name">stock.item.damage.list</field>
+        <field name="model">stock.item.damage</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="product_id"/>
+                <field name="location_id"/>
+                <field name="damage_type"/>
+                <field name="quantity"/>
+                <field name="date_damaged"/>
+                <field name="reported_by"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="action_stock_item_damage" model="ir.actions.act_window">
+        <field name="name">Damaged Items</field>
+        <field name="res_model">stock.item.damage</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem id="menu_stock_item_damage_root" name="Tracking" parent="stock.menu_stock_warehouse_mgmt" sequence="5"/>
+    <menuitem id="menu_stock_tracking_item" name="Damaged Items"
+              parent="menu_stock_item_damage_root"
+              action="action_stock_item_damage"
+              sequence="136"/>
+</odoo>

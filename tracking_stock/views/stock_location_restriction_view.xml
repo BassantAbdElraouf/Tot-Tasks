@@ -1,0 +1,40 @@
+<odoo>
+    <record id="view_form_stock_location_restriction" model="ir.ui.view">
+        <field name="name">stock.location.restriction.form</field>
+        <field name="model">stock.location.restriction</field>
+        <field name="arch" type="xml">
+            <form string="Location Restriction">
+                <sheet>
+                    <group>
+                        <field name="location_id"/>
+                        <field name="restriction_type"/>
+                        <field name="description"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_list_stock_location_restriction" model="ir.ui.view">
+        <field name="name">stock.location.restriction.list</field>
+        <field name="model">stock.location.restriction</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="location_id"/>
+                <field name="restriction_type"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="action_stock_location_restriction" model="ir.actions.act_window">
+        <field name="name">Location Restrictions</field>
+        <field name="res_model">stock.location.restriction</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem id="menu_stock_location_restriction"
+              name="Location Restrictions"
+              parent="menu_stock_item_damage_root"
+              action="action_stock_location_restriction"
+              sequence="137"/>
+</odoo>
