@@ -16,8 +16,7 @@ Optional tags for classification and filtering.
 4. purchase.note.attachment
 Attachments related to the notes (files, documents, etc.)
 ------------------------------------------------------------------------------------------------------------
-🧩 Module: purchase_budget_control
-Extends: purchase + account
+🧩 Module: purchase_budget
 
 🎯 Purpose:
 Link purchasing operations to budgets and control expenses efficiently
