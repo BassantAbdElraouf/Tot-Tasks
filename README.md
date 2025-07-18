@@ -62,13 +62,13 @@ Automate discounts, track user commissions, and manage delivery deadlines in the
 1. user.commission
 Defines commission brackets for users based on sale amount ranges.
 
-2. sale.order.line (extended)
+2. sale.order.line 
 Auto-applies product category discounts when a product is selected.
 
-3. sale.order (extended)
+3. sale.order
 Adds a delivery deadline field synced to pickings on confirmation.
 
-4. product.category (extended)
+4. product.category
 Adds a default discount field used in sale order lines.
 
 
