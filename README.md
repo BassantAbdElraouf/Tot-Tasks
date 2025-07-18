@@ -32,4 +32,25 @@ Tracks actual budget consumption based on confirmed purchase orders.
 
 4. purchase.budget.alert
 Triggers alerts when a specific budget threshold is exceeded.
+--------------------------------------------------------------------------------------------------------------
+
+🧩 Module: tracking_stock
+
+🎯 Purpose:
+Enhance warehouse tracking with safety, quality, and traceability measures.
+
+📦 Models:
+1. stock.item.damage
+Records damaged items during storage or transportation.
+
+2. stock.transfer.note
+Notes added by staff during internal or external transfers.
+
+3. stock.location.restriction
+Defines storage location restrictions (e.g., hazardous or flammable materials).
+
+4. stock.picking.temperature.log
+Logs product temperature during transport — especially useful for sensitive goods.
+
+
 
