@@ -51,6 +51,28 @@ Defines storage location restrictions (e.g., hazardous or flammable materials).
 
 4. stock.picking.temperature.log
 Logs product temperature during transport — especially useful for sensitive goods.
+---------------------------------------------------------------------------------------------------------------
+🧩 Module: custom_sale
+
+🎯 Purpose:
+Automate discounts, track user commissions, and manage delivery deadlines in the sales process.
+
+📦 Models:
+
+1. user.commission
+Defines commission brackets for users based on sale amount ranges.
+
+2. sale.order.line (extended)
+Auto-applies product category discounts when a product is selected.
+
+3. sale.order (extended)
+Adds a delivery deadline field synced to pickings on confirmation.
+
+4. product.category (extended)
+Adds a default discount field used in sale order lines.
+
+
+
 
 
 
