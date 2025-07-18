@@ -15,7 +15,7 @@ The actual note linked to a purchase order.
 Optional tags for classification and filtering.
 4. purchase.note.attachment
 Attachments related to the notes (files, documents, etc.)
-
+------------------------------------------------------------------------------------------------------------
 🧩 Module: purchase_budget_control
 Extends: purchase + account
 
