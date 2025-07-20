@@ -1,9 +1,9 @@
-#🧩 Module: purchase_note
+🧩 Module: purchase_note
 
-  #🎯 Purpose:
+  🎯 Purpose:
   To enable structured notes on purchase orders with classification and attachments.
   
-  #📦 Models:
+  📦 Models:
   1. purchase.note.category
   Note categories (e.g., Financial, Technical, Administrative…)
   
